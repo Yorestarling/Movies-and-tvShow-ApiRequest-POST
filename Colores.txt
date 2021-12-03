@@ -1,0 +1,6 @@
+
+
+Color principal -- #054C63 Azul Oscuro 00
+Color secundario -- #5E6466 Gris oscuro 
+Color Terceario -- #0986B0 Azul oscuro 01 
+Color Cuaternario -- #51C2E8 Azul claro 11
