@@ -1,11 +1,17 @@
 <resources>
-    <string name="app_name">yoremovies</string>
+    <string name="app_name">B R E A K </string>
     <string name="TxtMovies">Movies</string>
     <string name="TxtName">Name</string>
     <string name="TxtLastName">Last Name</string>
     <string name="btnSubmit">SUBMIT</string>
     <string name="BtnSearch"> SEARCH </string>
     <string name="BtnAccess"> ACCESS </string>
-    <string name="TxtIn">YOUR FAVORITE MOVIES AND TV SHOWS ARE HERE</string>
+    <string name="txtTitle"> TITLE </string>
+    <string name="txtDescriptions"> DESCRIPTIONS </string>
+    <string name="ReleaseDate"> RELEASE DATE </string>
+    <string name="Status"> STATUS </string>
+    <string name="Country"> COUNTRY </string>
+    <string name="YouSource"> SOURCE </string>
+    <string name="TxtIn">YOUR FAVORITE TV SHOWS ARE HERE</string>
 
 </resources>

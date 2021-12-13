@@ -26,10 +26,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
         android:layout_margin="16dp"
-        tools:srcCompat="@drawable/movie" />
+        android:layout_weight="1"
+        app:srcCompat="@drawable/movie" />
 
     <Button
         android:id="@+id/btnaccess"

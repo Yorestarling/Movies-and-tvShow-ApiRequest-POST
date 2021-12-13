@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/drawable/splashscreen.xml" value="0.26564102564102565" />
+        <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/layout/activity_details.xml" value="0.264" />
         <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/layout/loading.xml" value="0.1" />
+        <entry key="..\:/HW/UCE 9no Cuatrimestre/DESARROLLO DE APLICACIONES MOVILES I/MoviesShowFinal/app/src/main/res/layout/tvshow_rv_item.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
