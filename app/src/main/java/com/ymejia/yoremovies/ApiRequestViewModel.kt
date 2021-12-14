@@ -18,10 +18,14 @@ class ApiRequestViewModel() : ViewModel() {
     private val _tvShowList = MutableLiveData<List<TvShow>>()
     private val _exception = MutableLiveData<Throwable>()
     private val _select: MutableLiveData<TvShow> = MutableLiveData()
+    private val _tvShow = MutableLiveData<TvShow>()
+
 
     private val _pagination: MutableLiveData<pagination> = MutableLiveData()
     private val _loading: MutableLiveData<Boolean> = MutableLiveData()
 
+
+    val tvShow :  LiveData<TvShow> = _tvShow
     val tvShowList : LiveData<List<TvShow>> = _tvShowList
     val selected: LiveData<TvShow> = _select
     val exception: LiveData<Throwable> = _exception
@@ -62,6 +66,7 @@ class ApiRequestViewModel() : ViewModel() {
     fun select(tvShow: TvShow ){
 
         _select.value = tvShow
+        getTvDetailsShow(tvShow.id.toString())
 
     }
  
@@ -82,5 +87,26 @@ class ApiRequestViewModel() : ViewModel() {
         }
     }
 
+    fun getTvDetailsShow(q: String){
+
+        var response = services.tvDetailsShow(q).enqueue(object : Callback<ResponseAll> {
+            override fun onResponse(
+                call: Call<ResponseAll>,
+                response: Response<ResponseAll>
+            )
+            {
+                val responseBody = response.body();
+                _tvShow.value = responseBody!!.tvShow
+
+            }
+
+            override fun onFailure(call: Call<ResponseAll>, t: Throwable)
+            {
+                _exception.value = t
+
+            }
+
+        })
+    }
 
 }

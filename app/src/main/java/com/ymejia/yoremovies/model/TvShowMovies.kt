@@ -20,8 +20,6 @@ class TvShow (
     @SerializedName("youtube_link") val youtube_link : String,
     @SerializedName("image_thumbnail_path") val image_thumbnail_path : String,
 
-
-
     )
 
 

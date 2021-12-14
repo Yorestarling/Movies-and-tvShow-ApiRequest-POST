@@ -20,10 +20,10 @@ interface ApiServices {
     fun search(@Query ("q")q : String) : Call<ResponseApi>
 
     @GET("/api/show-details")
-    fun TvDetailsShow(@Query("q")q : String) : Call<ResponseAll>
+    fun tvDetailsShow(@Query("q")details : String) : Call<ResponseAll>
+
 
     companion object{
-
         private var _instance : ApiServices? = null
 
         fun getInstance(): ApiServices{

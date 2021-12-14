@@ -24,9 +24,10 @@ class DetailsActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-
         val gson = Gson()
         val tvshow = gson.fromJson<TvShow>(intent.getStringExtra("tvshow"),TvShow::class.java)
+
+       // viewModel = ViewModelProvider(this).get(ApiRequestViewModel::class.java)
 
 
         binding.tvTitleDeta.text = tvshow.title
@@ -42,6 +43,9 @@ class DetailsActivity : AppCompatActivity() {
             .centerCrop()
             .resize(800, 800)
             .into(binding.imageView3)
+
+       // viewModel.TvDetailsShow(tvshow.id.toString())
+
 
     }
 }

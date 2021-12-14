@@ -125,10 +125,11 @@ class HomeActivity : AppCompatActivity() {
      fun onClickTvShow(tvShow: TvShow) {
          viewModel.select(tvShow)
 
-        val intent = Intent(this@HomeActivity,DetailsActivity::class.java)
+    val intent = Intent(this@HomeActivity,DetailsActivity::class.java)
+
             val gson = Gson()
         intent.putExtra("tvshow",gson.toJson(viewModel.selected.value))
-        startActivity(intent)
+         startActivity(intent)
         //this.finish()
     }
 
